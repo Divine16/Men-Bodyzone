@@ -13,10 +13,16 @@
 @end
 
 @implementation OptionViewController
+- (IBAction)Weight:(id)sender {
+}
+- (IBAction)Muscle:(id)sender {
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
 }
 
 /*
