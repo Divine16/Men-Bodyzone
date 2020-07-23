@@ -1,0 +1,6 @@
+framework module Pods_Men_Bodyzone_Men_BodyzoneUITests {
+  umbrella header "Pods-Men Bodyzone-Men BodyzoneUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

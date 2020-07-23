@@ -1,0 +1,6 @@
+framework module Pods_Men_Bodyzone {
+  umbrella header "Pods-Men Bodyzone-umbrella.h"
+
+  export *
+  module * { export * }
+}
