@@ -11,6 +11,7 @@
 		435EC62C0F82081BF05FFCA9 /* Pods_Men_BodyzoneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83BF808BEF2C26459C38F390 /* Pods_Men_BodyzoneTests.framework */; };
 		67BA8D6D3E5DE057C07BE808 /* Pods_Men_Bodyzone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A155DCF6AFE4E1BA051F80A /* Pods_Men_Bodyzone.framework */; };
 		BC64FD0424CACA9E0048AAE0 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC64FD0324CACA9E0048AAE0 /* CameraViewController.m */; };
+		BC64FD0724CACDFC0048AAE0 /* CamsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC64FD0624CACDFC0048AAE0 /* CamsViewController.m */; };
 		BCE3266524C1229F00574487 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE3266424C1229F00574487 /* AppDelegate.m */; };
 		BCE3266824C1229F00574487 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE3266724C1229F00574487 /* SceneDelegate.m */; };
 		BCE3266B24C1229F00574487 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE3266A24C1229F00574487 /* ViewController.m */; };
@@ -52,6 +53,8 @@
 		AB42516D2F87ED43A2909E3B /* Pods-Men Bodyzone-Men BodyzoneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Men Bodyzone-Men BodyzoneUITests.release.xcconfig"; path = "Target Support Files/Pods-Men Bodyzone-Men BodyzoneUITests/Pods-Men Bodyzone-Men BodyzoneUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BC64FD0224CACA9E0048AAE0 /* CameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
 		BC64FD0324CACA9E0048AAE0 /* CameraViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		BC64FD0524CACDFC0048AAE0 /* CamsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CamsViewController.h; sourceTree = "<group>"; };
+		BC64FD0624CACDFC0048AAE0 /* CamsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CamsViewController.m; sourceTree = "<group>"; };
 		BCE3266024C1229F00574487 /* Men Bodyzone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Men Bodyzone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE3266324C1229F00574487 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BCE3266424C1229F00574487 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -159,6 +162,8 @@
 				BCE3266324C1229F00574487 /* AppDelegate.h */,
 				BCE3266424C1229F00574487 /* AppDelegate.m */,
 				BCE3266624C1229F00574487 /* SceneDelegate.h */,
+				BC64FD0524CACDFC0048AAE0 /* CamsViewController.h */,
+				BC64FD0624CACDFC0048AAE0 /* CamsViewController.m */,
 				BCE3266724C1229F00574487 /* SceneDelegate.m */,
 				BCE3269E24C7419900574487 /* OptionViewController.h */,
 				BCE3269F24C7419900574487 /* OptionViewController.m */,
@@ -436,6 +441,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCE326A024C7419900574487 /* OptionViewController.m in Sources */,
+				BC64FD0724CACDFC0048AAE0 /* CamsViewController.m in Sources */,
 				BCE3266B24C1229F00574487 /* ViewController.m in Sources */,
 				BCE3266524C1229F00574487 /* AppDelegate.m in Sources */,
 				BCE3267624C122A000574487 /* main.m in Sources */,
