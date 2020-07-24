@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3EDA987C4DC846DBB4D56F13 /* Pods_Men_Bodyzone_Men_BodyzoneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC180D8822BF4042E7BC792 /* Pods_Men_Bodyzone_Men_BodyzoneUITests.framework */; };
 		435EC62C0F82081BF05FFCA9 /* Pods_Men_BodyzoneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83BF808BEF2C26459C38F390 /* Pods_Men_BodyzoneTests.framework */; };
 		67BA8D6D3E5DE057C07BE808 /* Pods_Men_Bodyzone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A155DCF6AFE4E1BA051F80A /* Pods_Men_Bodyzone.framework */; };
+		BC64FD0424CACA9E0048AAE0 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC64FD0324CACA9E0048AAE0 /* CameraViewController.m */; };
 		BCE3266524C1229F00574487 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE3266424C1229F00574487 /* AppDelegate.m */; };
 		BCE3266824C1229F00574487 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE3266724C1229F00574487 /* SceneDelegate.m */; };
 		BCE3266B24C1229F00574487 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE3266A24C1229F00574487 /* ViewController.m */; };
@@ -49,6 +50,8 @@
 		9276A5DE143F4B74E648D339 /* Pods-Men BodyzoneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Men BodyzoneTests.release.xcconfig"; path = "Target Support Files/Pods-Men BodyzoneTests/Pods-Men BodyzoneTests.release.xcconfig"; sourceTree = "<group>"; };
 		A6873A49734A9D167EEF126C /* Pods-Men Bodyzone-Men BodyzoneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Men Bodyzone-Men BodyzoneUITests.debug.xcconfig"; path = "Target Support Files/Pods-Men Bodyzone-Men BodyzoneUITests/Pods-Men Bodyzone-Men BodyzoneUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AB42516D2F87ED43A2909E3B /* Pods-Men Bodyzone-Men BodyzoneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Men Bodyzone-Men BodyzoneUITests.release.xcconfig"; path = "Target Support Files/Pods-Men Bodyzone-Men BodyzoneUITests/Pods-Men Bodyzone-Men BodyzoneUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BC64FD0224CACA9E0048AAE0 /* CameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		BC64FD0324CACA9E0048AAE0 /* CameraViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
 		BCE3266024C1229F00574487 /* Men Bodyzone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Men Bodyzone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE3266324C1229F00574487 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BCE3266424C1229F00574487 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -125,7 +128,6 @@
 				C7935E202016C8EB13C95019 /* Pods-Men BodyzoneTests.debug.xcconfig */,
 				9276A5DE143F4B74E648D339 /* Pods-Men BodyzoneTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -162,6 +164,8 @@
 				BCE3269F24C7419900574487 /* OptionViewController.m */,
 				BCE3269824C7416A00574487 /* LoginViewController.h */,
 				BCE3269924C7416A00574487 /* LoginViewController.m */,
+				BC64FD0224CACA9E0048AAE0 /* CameraViewController.h */,
+				BC64FD0324CACA9E0048AAE0 /* CameraViewController.m */,
 				BCE3269B24C7418600574487 /* UserDataViewController.h */,
 				BCE3269C24C7418600574487 /* UserDataViewController.m */,
 				BCE3266924C1229F00574487 /* ViewController.h */,
@@ -436,6 +440,7 @@
 				BCE3266524C1229F00574487 /* AppDelegate.m in Sources */,
 				BCE3267624C122A000574487 /* main.m in Sources */,
 				BCE3269D24C7418600574487 /* UserDataViewController.m in Sources */,
+				BC64FD0424CACA9E0048AAE0 /* CameraViewController.m in Sources */,
 				BCE3266824C1229F00574487 /* SceneDelegate.m in Sources */,
 				BCE3269A24C7416A00574487 /* LoginViewController.m in Sources */,
 			);
