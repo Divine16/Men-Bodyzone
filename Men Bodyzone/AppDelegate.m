@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "LogViewController.h"
+#import "AccountViewController.h"
+
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
 
 @interface AppDelegate ()
 
@@ -17,10 +21,31 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
+   [[FBSDKApplicationDelegate sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
+    
+    if ([FBSDKAccessToken currentAccessToken]) {
+        //Take user AccountViewController
+        AccountViewController *accountViewController = [[AccountViewController alloc] initWithNibName:@"" bundle:nil];
+        UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:accountViewController];
+    } else {
+        LogViewController *logViewController = [[LogViewController alloc] initWithNibName:@"LogViewController" bundle:nil];
+        self.window.rootViewController = LogViewController;
+    }
+    
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
-
+- (BOOL)application:(UIApplication *) application openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+                          
+    BOOL handled = [[FBSDKApplicationDelegate sharedInstance]
+                                            application:application openURL:url sourceApplication:sourceApplication
+                                            annotation:annotation];
+    return handled;
+}
 #pragma mark - UISceneSession lifecycle
 
 
@@ -32,9 +57,9 @@
 
 
 - (void)application:(UIApplication *)application didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions {
-    // Called when the user discards a scene session.
-    // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-    // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+//     Called when the user discards a scene session.
+//     If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
+//     Use this method to release any resources that were specific to the discarded scenes, as they will not return.
 }
 
 

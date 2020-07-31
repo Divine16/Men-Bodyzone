@@ -57,5 +57,8 @@
 }
 
 - (IBAction)takePhoto:(id)sender {
+    
+    UIImage *image = self.imageview.image;
+    UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
 }
 @end

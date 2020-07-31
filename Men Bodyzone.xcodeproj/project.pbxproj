@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3EDA987C4DC846DBB4D56F13 /* Pods_Men_Bodyzone_Men_BodyzoneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC180D8822BF4042E7BC792 /* Pods_Men_Bodyzone_Men_BodyzoneUITests.framework */; };
-		435EC62C0F82081BF05FFCA9 /* Pods_Men_BodyzoneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83BF808BEF2C26459C38F390 /* Pods_Men_BodyzoneTests.framework */; };
-		67BA8D6D3E5DE057C07BE808 /* Pods_Men_Bodyzone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A155DCF6AFE4E1BA051F80A /* Pods_Men_Bodyzone.framework */; };
+		0F021BD431642938D687F612 /* Pods_Men_BodyzoneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D099F1F247277F13BF5F70D /* Pods_Men_BodyzoneTests.framework */; };
+		3CE2B3BC0E58DFAEF4E62ECF /* Pods_Men_Bodyzone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5687B377587803AA711D75B9 /* Pods_Men_Bodyzone.framework */; };
+		B2B69A6DDBD209E8D9940E7E /* Pods_Men_Bodyzone_Men_BodyzoneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C0D4F4A42459251B0523EB /* Pods_Men_Bodyzone_Men_BodyzoneUITests.framework */; };
 		BC64FD0724CACDFC0048AAE0 /* CamsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC64FD0624CACDFC0048AAE0 /* CamsViewController.m */; };
 		BCE3266524C1229F00574487 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE3266424C1229F00574487 /* AppDelegate.m */; };
 		BCE3266824C1229F00574487 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE3266724C1229F00574487 /* SceneDelegate.m */; };
@@ -20,9 +20,17 @@
 		BCE3267624C122A000574487 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE3267524C122A000574487 /* main.m */; };
 		BCE3268024C122A000574487 /* Men_BodyzoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE3267F24C122A000574487 /* Men_BodyzoneTests.m */; };
 		BCE3268B24C122A000574487 /* Men_BodyzoneUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE3268A24C122A000574487 /* Men_BodyzoneUITests.m */; };
-		BCE3269A24C7416A00574487 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE3269924C7416A00574487 /* LoginViewController.m */; };
 		BCE3269D24C7418600574487 /* UserDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE3269C24C7418600574487 /* UserDataViewController.m */; };
 		BCE326A024C7419900574487 /* OptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE3269F24C7419900574487 /* OptionViewController.m */; };
+		BCE84E8224D12E900035334A /* WorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE84E8124D12E900035334A /* WorkoutViewController.m */; };
+		BCE84E8524D12F9C0035334A /* WorkoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE84E8424D12F9C0035334A /* WorkoutCell.m */; };
+		BCE84E8824D2715E0035334A /* WebViewKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE84E8724D2715E0035334A /* WebViewKitViewController.m */; };
+		BCE84E8A24D274400035334A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE84E8924D274400035334A /* WebKit.framework */; };
+		BCE84E8D24D276300035334A /* SomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE84E8C24D276300035334A /* SomeViewController.m */; };
+		BCE84E9224D379630035334A /* LogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE84E9024D379630035334A /* LogViewController.m */; };
+		BCE84E9324D379630035334A /* LogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCE84E9124D379630035334A /* LogViewController.xib */; };
+		BCE84E9724D389260035334A /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE84E9524D389260035334A /* AccountViewController.m */; };
+		BCE84E9824D389260035334A /* AccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCE84E9624D389260035334A /* AccountViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,13 +51,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A155DCF6AFE4E1BA051F80A /* Pods_Men_Bodyzone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Men_Bodyzone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2AC180D8822BF4042E7BC792 /* Pods_Men_Bodyzone_Men_BodyzoneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Men_Bodyzone_Men_BodyzoneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		807BF3DD909BCDDAB4072740 /* Pods-Men Bodyzone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Men Bodyzone.debug.xcconfig"; path = "Target Support Files/Pods-Men Bodyzone/Pods-Men Bodyzone.debug.xcconfig"; sourceTree = "<group>"; };
-		83BF808BEF2C26459C38F390 /* Pods_Men_BodyzoneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Men_BodyzoneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9276A5DE143F4B74E648D339 /* Pods-Men BodyzoneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Men BodyzoneTests.release.xcconfig"; path = "Target Support Files/Pods-Men BodyzoneTests/Pods-Men BodyzoneTests.release.xcconfig"; sourceTree = "<group>"; };
-		A6873A49734A9D167EEF126C /* Pods-Men Bodyzone-Men BodyzoneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Men Bodyzone-Men BodyzoneUITests.debug.xcconfig"; path = "Target Support Files/Pods-Men Bodyzone-Men BodyzoneUITests/Pods-Men Bodyzone-Men BodyzoneUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		AB42516D2F87ED43A2909E3B /* Pods-Men Bodyzone-Men BodyzoneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Men Bodyzone-Men BodyzoneUITests.release.xcconfig"; path = "Target Support Files/Pods-Men Bodyzone-Men BodyzoneUITests/Pods-Men Bodyzone-Men BodyzoneUITests.release.xcconfig"; sourceTree = "<group>"; };
+		14E56D515BFBA1DF40F06AEE /* Pods-Men BodyzoneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Men BodyzoneTests.release.xcconfig"; path = "Target Support Files/Pods-Men BodyzoneTests/Pods-Men BodyzoneTests.release.xcconfig"; sourceTree = "<group>"; };
+		4D099F1F247277F13BF5F70D /* Pods_Men_BodyzoneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Men_BodyzoneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		557D46807F336FF56B3142EF /* Pods-Men Bodyzone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Men Bodyzone.debug.xcconfig"; path = "Target Support Files/Pods-Men Bodyzone/Pods-Men Bodyzone.debug.xcconfig"; sourceTree = "<group>"; };
+		5687B377587803AA711D75B9 /* Pods_Men_Bodyzone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Men_Bodyzone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61C0D4F4A42459251B0523EB /* Pods_Men_Bodyzone_Men_BodyzoneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Men_Bodyzone_Men_BodyzoneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		664EC03E388A74E238786A3A /* Pods-Men Bodyzone-Men BodyzoneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Men Bodyzone-Men BodyzoneUITests.debug.xcconfig"; path = "Target Support Files/Pods-Men Bodyzone-Men BodyzoneUITests/Pods-Men Bodyzone-Men BodyzoneUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9C7AA240CBDDB311C18F5E83 /* Pods-Men BodyzoneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Men BodyzoneTests.debug.xcconfig"; path = "Target Support Files/Pods-Men BodyzoneTests/Pods-Men BodyzoneTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A8BA39435911D8D744F99FAC /* Pods-Men Bodyzone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Men Bodyzone.release.xcconfig"; path = "Target Support Files/Pods-Men Bodyzone/Pods-Men Bodyzone.release.xcconfig"; sourceTree = "<group>"; };
+		B4A723F05068A68D2D3E68B2 /* Pods-Men Bodyzone-Men BodyzoneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Men Bodyzone-Men BodyzoneUITests.release.xcconfig"; path = "Target Support Files/Pods-Men Bodyzone-Men BodyzoneUITests/Pods-Men Bodyzone-Men BodyzoneUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BC64FD0524CACDFC0048AAE0 /* CamsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CamsViewController.h; sourceTree = "<group>"; };
 		BC64FD0624CACDFC0048AAE0 /* CamsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CamsViewController.m; sourceTree = "<group>"; };
 		BCE3266024C1229F00574487 /* Men Bodyzone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Men Bodyzone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,14 +80,25 @@
 		BCE3268624C122A000574487 /* Men BodyzoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Men BodyzoneUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE3268A24C122A000574487 /* Men_BodyzoneUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Men_BodyzoneUITests.m; sourceTree = "<group>"; };
 		BCE3268C24C122A000574487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BCE3269824C7416A00574487 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		BCE3269924C7416A00574487 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		BCE3269B24C7418600574487 /* UserDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserDataViewController.h; sourceTree = "<group>"; };
 		BCE3269C24C7418600574487 /* UserDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserDataViewController.m; sourceTree = "<group>"; };
 		BCE3269E24C7419900574487 /* OptionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OptionViewController.h; sourceTree = "<group>"; };
 		BCE3269F24C7419900574487 /* OptionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OptionViewController.m; sourceTree = "<group>"; };
-		C3DA9854C5307E2735CD3C50 /* Pods-Men Bodyzone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Men Bodyzone.release.xcconfig"; path = "Target Support Files/Pods-Men Bodyzone/Pods-Men Bodyzone.release.xcconfig"; sourceTree = "<group>"; };
-		C7935E202016C8EB13C95019 /* Pods-Men BodyzoneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Men BodyzoneTests.debug.xcconfig"; path = "Target Support Files/Pods-Men BodyzoneTests/Pods-Men BodyzoneTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BCE84E8024D12E900035334A /* WorkoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WorkoutViewController.h; sourceTree = "<group>"; };
+		BCE84E8124D12E900035334A /* WorkoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorkoutViewController.m; sourceTree = "<group>"; };
+		BCE84E8324D12F9C0035334A /* WorkoutCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WorkoutCell.h; sourceTree = "<group>"; };
+		BCE84E8424D12F9C0035334A /* WorkoutCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorkoutCell.m; sourceTree = "<group>"; };
+		BCE84E8624D2715E0035334A /* WebViewKitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewKitViewController.h; sourceTree = "<group>"; };
+		BCE84E8724D2715E0035334A /* WebViewKitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewKitViewController.m; sourceTree = "<group>"; };
+		BCE84E8924D274400035334A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		BCE84E8B24D276300035334A /* SomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SomeViewController.h; sourceTree = "<group>"; };
+		BCE84E8C24D276300035334A /* SomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SomeViewController.m; sourceTree = "<group>"; };
+		BCE84E8F24D379630035334A /* LogViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogViewController.h; sourceTree = "<group>"; };
+		BCE84E9024D379630035334A /* LogViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogViewController.m; sourceTree = "<group>"; };
+		BCE84E9124D379630035334A /* LogViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogViewController.xib; sourceTree = "<group>"; };
+		BCE84E9424D389260035334A /* AccountViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
+		BCE84E9524D389260035334A /* AccountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
+		BCE84E9624D389260035334A /* AccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +106,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67BA8D6D3E5DE057C07BE808 /* Pods_Men_Bodyzone.framework in Frameworks */,
+				BCE84E8A24D274400035334A /* WebKit.framework in Frameworks */,
+				3CE2B3BC0E58DFAEF4E62ECF /* Pods_Men_Bodyzone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,7 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				435EC62C0F82081BF05FFCA9 /* Pods_Men_BodyzoneTests.framework in Frameworks */,
+				0F021BD431642938D687F612 /* Pods_Men_BodyzoneTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,34 +123,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EDA987C4DC846DBB4D56F13 /* Pods_Men_Bodyzone_Men_BodyzoneUITests.framework in Frameworks */,
+				B2B69A6DDBD209E8D9940E7E /* Pods_Men_Bodyzone_Men_BodyzoneUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		16C2059FB08CB19D6B54EEAF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0A155DCF6AFE4E1BA051F80A /* Pods_Men_Bodyzone.framework */,
-				2AC180D8822BF4042E7BC792 /* Pods_Men_Bodyzone_Men_BodyzoneUITests.framework */,
-				83BF808BEF2C26459C38F390 /* Pods_Men_BodyzoneTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		4E4175908770389868FFCD5B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				807BF3DD909BCDDAB4072740 /* Pods-Men Bodyzone.debug.xcconfig */,
-				C3DA9854C5307E2735CD3C50 /* Pods-Men Bodyzone.release.xcconfig */,
-				A6873A49734A9D167EEF126C /* Pods-Men Bodyzone-Men BodyzoneUITests.debug.xcconfig */,
-				AB42516D2F87ED43A2909E3B /* Pods-Men Bodyzone-Men BodyzoneUITests.release.xcconfig */,
-				C7935E202016C8EB13C95019 /* Pods-Men BodyzoneTests.debug.xcconfig */,
-				9276A5DE143F4B74E648D339 /* Pods-Men BodyzoneTests.release.xcconfig */,
+				557D46807F336FF56B3142EF /* Pods-Men Bodyzone.debug.xcconfig */,
+				A8BA39435911D8D744F99FAC /* Pods-Men Bodyzone.release.xcconfig */,
+				664EC03E388A74E238786A3A /* Pods-Men Bodyzone-Men BodyzoneUITests.debug.xcconfig */,
+				B4A723F05068A68D2D3E68B2 /* Pods-Men Bodyzone-Men BodyzoneUITests.release.xcconfig */,
+				9C7AA240CBDDB311C18F5E83 /* Pods-Men BodyzoneTests.debug.xcconfig */,
+				14E56D515BFBA1DF40F06AEE /* Pods-Men BodyzoneTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		6104F3E938EF260FD9FEEECA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCE84E8924D274400035334A /* WebKit.framework */,
+				5687B377587803AA711D75B9 /* Pods_Men_Bodyzone.framework */,
+				61C0D4F4A42459251B0523EB /* Pods_Men_Bodyzone_Men_BodyzoneUITests.framework */,
+				4D099F1F247277F13BF5F70D /* Pods_Men_BodyzoneTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BCE3265724C1229F00574487 = {
@@ -139,7 +162,7 @@
 				BCE3268924C122A000574487 /* Men BodyzoneUITests */,
 				BCE3266124C1229F00574487 /* Products */,
 				4E4175908770389868FFCD5B /* Pods */,
-				16C2059FB08CB19D6B54EEAF /* Frameworks */,
+				6104F3E938EF260FD9FEEECA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,25 +179,17 @@
 		BCE3266224C1229F00574487 /* Men Bodyzone */ = {
 			isa = PBXGroup;
 			children = (
+				BCE84E8E24D347BF0035334A /* View Controllers */,
 				BCE3266324C1229F00574487 /* AppDelegate.h */,
 				BCE3266424C1229F00574487 /* AppDelegate.m */,
 				BCE3266624C1229F00574487 /* SceneDelegate.h */,
-				BC64FD0524CACDFC0048AAE0 /* CamsViewController.h */,
-				BC64FD0624CACDFC0048AAE0 /* CamsViewController.m */,
-				BCE3266724C1229F00574487 /* SceneDelegate.m */,
-				BCE3269E24C7419900574487 /* OptionViewController.h */,
-				BCE3269F24C7419900574487 /* OptionViewController.m */,
-				BCE3269824C7416A00574487 /* LoginViewController.h */,
-				BCE3269924C7416A00574487 /* LoginViewController.m */,
-				BCE3269B24C7418600574487 /* UserDataViewController.h */,
-				BCE3269C24C7418600574487 /* UserDataViewController.m */,
-				BCE3266924C1229F00574487 /* ViewController.h */,
-				BCE3266A24C1229F00574487 /* ViewController.m */,
 				BCE3266C24C1229F00574487 /* Main.storyboard */,
 				BCE3266F24C122A000574487 /* Assets.xcassets */,
 				BCE3267124C122A000574487 /* LaunchScreen.storyboard */,
 				BCE3267424C122A000574487 /* Info.plist */,
 				BCE3267524C122A000574487 /* main.m */,
+				BCE84E8324D12F9C0035334A /* WorkoutCell.h */,
+				BCE84E8424D12F9C0035334A /* WorkoutCell.m */,
 			);
 			path = "Men Bodyzone";
 			sourceTree = "<group>";
@@ -197,6 +212,34 @@
 			path = "Men BodyzoneUITests";
 			sourceTree = "<group>";
 		};
+		BCE84E8E24D347BF0035334A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BC64FD0524CACDFC0048AAE0 /* CamsViewController.h */,
+				BC64FD0624CACDFC0048AAE0 /* CamsViewController.m */,
+				BCE3266724C1229F00574487 /* SceneDelegate.m */,
+				BCE3269E24C7419900574487 /* OptionViewController.h */,
+				BCE3269F24C7419900574487 /* OptionViewController.m */,
+				BCE84E8F24D379630035334A /* LogViewController.h */,
+				BCE84E9024D379630035334A /* LogViewController.m */,
+				BCE84E9124D379630035334A /* LogViewController.xib */,
+				BCE84E8B24D276300035334A /* SomeViewController.h */,
+				BCE84E8C24D276300035334A /* SomeViewController.m */,
+				BCE84E8624D2715E0035334A /* WebViewKitViewController.h */,
+				BCE84E8724D2715E0035334A /* WebViewKitViewController.m */,
+				BCE84E8024D12E900035334A /* WorkoutViewController.h */,
+				BCE84E8124D12E900035334A /* WorkoutViewController.m */,
+				BCE3269B24C7418600574487 /* UserDataViewController.h */,
+				BCE3269C24C7418600574487 /* UserDataViewController.m */,
+				BCE3266924C1229F00574487 /* ViewController.h */,
+				BCE3266A24C1229F00574487 /* ViewController.m */,
+				BCE84E9424D389260035334A /* AccountViewController.h */,
+				BCE84E9524D389260035334A /* AccountViewController.m */,
+				BCE84E9624D389260035334A /* AccountViewController.xib */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -204,11 +247,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCE3268F24C122A000574487 /* Build configuration list for PBXNativeTarget "Men Bodyzone" */;
 			buildPhases = (
-				E1E4C34600CB2D30212B7038 /* [CP] Check Pods Manifest.lock */,
+				86AEAD8D9AB8983D84A15B97 /* [CP] Check Pods Manifest.lock */,
 				BCE3265C24C1229F00574487 /* Sources */,
 				BCE3265D24C1229F00574487 /* Frameworks */,
 				BCE3265E24C1229F00574487 /* Resources */,
-				4C416D73563DD89C643DC015 /* [CP] Embed Pods Frameworks */,
+				883863E6ED42A5F4DD56BAEE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -223,7 +266,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCE3269224C122A000574487 /* Build configuration list for PBXNativeTarget "Men BodyzoneTests" */;
 			buildPhases = (
-				35FA76507D6C39D2E7F56DBE /* [CP] Check Pods Manifest.lock */,
+				7F4726607A98583157A30924 /* [CP] Check Pods Manifest.lock */,
 				BCE3267724C122A000574487 /* Sources */,
 				BCE3267824C122A000574487 /* Frameworks */,
 				BCE3267924C122A000574487 /* Resources */,
@@ -242,11 +285,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCE3269524C122A000574487 /* Build configuration list for PBXNativeTarget "Men BodyzoneUITests" */;
 			buildPhases = (
-				EB365EF70191EC1574593BBE /* [CP] Check Pods Manifest.lock */,
+				17D26D4A8FF0572D77D7DCC1 /* [CP] Check Pods Manifest.lock */,
 				BCE3268224C122A000574487 /* Sources */,
 				BCE3268324C122A000574487 /* Frameworks */,
 				BCE3268424C122A000574487 /* Resources */,
-				2952F7DE2AD930A1BEB0E6B2 /* [CP] Embed Pods Frameworks */,
+				4A3AE97CD9D7600DCCC764BD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -308,6 +351,8 @@
 				BCE3267324C122A000574487 /* LaunchScreen.storyboard in Resources */,
 				BCE3267024C122A000574487 /* Assets.xcassets in Resources */,
 				BCE3266E24C1229F00574487 /* Main.storyboard in Resources */,
+				BCE84E9324D379630035334A /* LogViewController.xib in Resources */,
+				BCE84E9824D389260035334A /* AccountViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,85 +373,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2952F7DE2AD930A1BEB0E6B2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Men Bodyzone-Men BodyzoneUITests/Pods-Men Bodyzone-Men BodyzoneUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Men Bodyzone-Men BodyzoneUITests/Pods-Men Bodyzone-Men BodyzoneUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Men Bodyzone-Men BodyzoneUITests/Pods-Men Bodyzone-Men BodyzoneUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		35FA76507D6C39D2E7F56DBE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Men BodyzoneTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4C416D73563DD89C643DC015 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Men Bodyzone/Pods-Men Bodyzone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Men Bodyzone/Pods-Men Bodyzone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Men Bodyzone/Pods-Men Bodyzone-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E1E4C34600CB2D30212B7038 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Men Bodyzone-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EB365EF70191EC1574593BBE /* [CP] Check Pods Manifest.lock */ = {
+		17D26D4A8FF0572D77D7DCC1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -428,6 +395,84 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4A3AE97CD9D7600DCCC764BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Men Bodyzone-Men BodyzoneUITests/Pods-Men Bodyzone-Men BodyzoneUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Men Bodyzone-Men BodyzoneUITests/Pods-Men Bodyzone-Men BodyzoneUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Men Bodyzone-Men BodyzoneUITests/Pods-Men Bodyzone-Men BodyzoneUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F4726607A98583157A30924 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Men BodyzoneTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86AEAD8D9AB8983D84A15B97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Men Bodyzone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		883863E6ED42A5F4DD56BAEE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Men Bodyzone/Pods-Men Bodyzone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Men Bodyzone/Pods-Men Bodyzone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Men Bodyzone/Pods-Men Bodyzone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -436,13 +481,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCE326A024C7419900574487 /* OptionViewController.m in Sources */,
+				BCE84E8524D12F9C0035334A /* WorkoutCell.m in Sources */,
+				BCE84E8824D2715E0035334A /* WebViewKitViewController.m in Sources */,
 				BC64FD0724CACDFC0048AAE0 /* CamsViewController.m in Sources */,
 				BCE3266B24C1229F00574487 /* ViewController.m in Sources */,
 				BCE3266524C1229F00574487 /* AppDelegate.m in Sources */,
+				BCE84E8D24D276300035334A /* SomeViewController.m in Sources */,
 				BCE3267624C122A000574487 /* main.m in Sources */,
 				BCE3269D24C7418600574487 /* UserDataViewController.m in Sources */,
 				BCE3266824C1229F00574487 /* SceneDelegate.m in Sources */,
-				BCE3269A24C7416A00574487 /* LoginViewController.m in Sources */,
+				BCE84E9224D379630035334A /* LogViewController.m in Sources */,
+				BCE84E8224D12E900035334A /* WorkoutViewController.m in Sources */,
+				BCE84E9724D389260035334A /* AccountViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,7 +659,7 @@
 		};
 		BCE3269024C122A000574487 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 807BF3DD909BCDDAB4072740 /* Pods-Men Bodyzone.debug.xcconfig */;
+			baseConfigurationReference = 557D46807F336FF56B3142EF /* Pods-Men Bodyzone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -628,7 +678,7 @@
 		};
 		BCE3269124C122A000574487 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3DA9854C5307E2735CD3C50 /* Pods-Men Bodyzone.release.xcconfig */;
+			baseConfigurationReference = A8BA39435911D8D744F99FAC /* Pods-Men Bodyzone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -647,7 +697,7 @@
 		};
 		BCE3269324C122A000574487 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7935E202016C8EB13C95019 /* Pods-Men BodyzoneTests.debug.xcconfig */;
+			baseConfigurationReference = 9C7AA240CBDDB311C18F5E83 /* Pods-Men BodyzoneTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -668,7 +718,7 @@
 		};
 		BCE3269424C122A000574487 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9276A5DE143F4B74E648D339 /* Pods-Men BodyzoneTests.release.xcconfig */;
+			baseConfigurationReference = 14E56D515BFBA1DF40F06AEE /* Pods-Men BodyzoneTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -689,7 +739,7 @@
 		};
 		BCE3269624C122A000574487 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6873A49734A9D167EEF126C /* Pods-Men Bodyzone-Men BodyzoneUITests.debug.xcconfig */;
+			baseConfigurationReference = 664EC03E388A74E238786A3A /* Pods-Men Bodyzone-Men BodyzoneUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 44MG3J7294;
@@ -708,7 +758,7 @@
 		};
 		BCE3269724C122A000574487 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB42516D2F87ED43A2909E3B /* Pods-Men Bodyzone-Men BodyzoneUITests.release.xcconfig */;
+			baseConfigurationReference = B4A723F05068A68D2D3E68B2 /* Pods-Men Bodyzone-Men BodyzoneUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 44MG3J7294;
