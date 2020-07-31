@@ -29,9 +29,10 @@
         //Take user AccountViewController
         AccountViewController *accountViewController = [[AccountViewController alloc] initWithNibName:@"" bundle:nil];
         UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:accountViewController];
+        self.window.rootViewController = navController;
     } else {
         LogViewController *logViewController = [[LogViewController alloc] initWithNibName:@"LogViewController" bundle:nil];
-        self.window.rootViewController = LogViewController;
+        self.window.rootViewController = logViewController;
     }
     
     [self.window makeKeyAndVisible];
