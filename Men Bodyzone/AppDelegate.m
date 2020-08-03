@@ -7,8 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "Parse/Parse.h"
 #import "LogViewController.h"
 #import "AccountViewController.h"
+
 
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 
@@ -19,11 +21,25 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(  NSDictionary *)launchOptions {
+    
+    ParseClientConfiguration *config = [ParseClientConfiguration   configurationWithBlock:^(id<ParseMutableClientConfiguration> configuration) {
+        
+        configuration.applicationId = @"myid";
+        configuration.clientKey=@"mymaster";
+        configuration.server = @"http://menbodyzone.herokuapp.com/parse";
+    }];
+    
+    [Parse initializeWithConfiguration:config];
+    
+    return YES;
+}
 
-   [[FBSDKApplicationDelegate sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
+//- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // Override point for customization after application launch.
+   // self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
+/*   [[FBSDKApplicationDelegate sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
     
     if ([FBSDKAccessToken currentAccessToken]) {
         //Take user AccountViewController
@@ -35,15 +51,15 @@
         self.window.rootViewController = logViewController;
     }
     
-    [self.window makeKeyAndVisible];
-    return YES;
-}
+    [self.window makeKeyAndVisible];  */
+//    return YES;
+//}
 
 - (BOOL)application:(UIApplication *) application openURL:(NSURL *)url
   sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
                           
     BOOL handled = [[FBSDKApplicationDelegate sharedInstance]
-                                            application:application openURL:url sourceApplication:sourceApplication
+                                            application:application openURL: url sourceApplication:sourceApplication
                                             annotation:annotation];
     return handled;
 }

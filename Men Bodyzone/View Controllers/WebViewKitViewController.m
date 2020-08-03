@@ -32,7 +32,6 @@
 */
 
 -(void) playVideo{
-    //self.key = ;
      NSString *youtubeLink = [NSString stringWithFormat: @"https://www.youtube.com/watch?v=%@", self.key];
                    NSURL *youtubeUrl = [NSURL URLWithString:youtubeLink];
                    NSURLRequest *youtubeRequest = [NSURLRequest requestWithURL: youtubeUrl

@@ -22,7 +22,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.imageView3.animationImages = [NSArray arrayWithObjects:
+                                                          
+                                       [UIImage imageNamed:@"Flying Man"],
+                                       [UIImage imageNamed:@"Fitness logo"],nil];
     
+    [self.imageView3 setAnimationRepeatCount:2];
+    self.imageView3.animationDuration = 5;
+    [self.imageView3 startAnimating];
 }
 
 /*

@@ -7,36 +7,31 @@
 //
 
 #import "WorkoutViewController.h"
+#import "WebViewKitViewController.h"
 #import "WorkoutCell.h"
 
 @interface WorkoutViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSArray *workoutNames;
+@property(nonatomic, strong) NSArray *links;
 
 @end
 
 @implementation WorkoutViewController
 
 - (void)viewDidLoad {
+    
+    UIImageView *myImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Fitness logo.jpg"]];
+                                                               [self.view addSubview:myImage];
     [super viewDidLoad];
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
     self.workoutNames = @[@"Chest", @"Legs", @"Abs", @"Biceps", @"Triceps", @"Shoulders"];
-    
+    self.links = @[@"mQMA88jJrFc", @"TC8ui7WkOao", @"uUKAYkQZXko", @"CLccU7tk7es", @"SuajkDYlIRw", @"jv31A4Ab4nA"];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     WorkoutCell *cell = [tableView dequeueReusableCellWithIdentifier: @"WorkoutCell" forIndexPath: indexPath];
@@ -50,6 +45,14 @@
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.workoutNames.count;
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    WebViewKitViewController *webController = [segue destinationViewController];
+    UITableViewCell *tappedCell = sender;
+    NSIndexPath *indexPath = [self.tableView indexPathForCell: tappedCell];
+    webController.key = self.links[indexPath.row];
+}
+
 
 
 

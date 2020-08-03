@@ -7,9 +7,11 @@
 //
 
 #import "AccountViewController.h"
+#import "LogViewController.h"
 
 //Frameworks
 #import <FBSDKCoreKit/FBSDKProfile.h>
+#import <FBSDKLoginKit/FBSDKLoginManager.h>
 
 @interface AccountViewController ()
 
@@ -55,6 +57,12 @@
 #pragma mark - Helper Methods
 
 -(void) doSomething {
+    FBSDKLoginManager *loginManager = [[FBSDKLoginManager alloc] init];
+    [loginManager logOut];
+    
+    //Send user back to LoginViewController
+    LogViewController *logViewController = [[LogViewController alloc] initWithNibName:@"LogViewController" bundle:nil];
+    [self presentViewController:logViewController animated:YES completion:nil];
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 //- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
