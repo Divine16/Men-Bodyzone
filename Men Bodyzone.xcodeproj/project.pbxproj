@@ -10,6 +10,9 @@
 		0F021BD431642938D687F612 /* Pods_Men_BodyzoneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D099F1F247277F13BF5F70D /* Pods_Men_BodyzoneTests.framework */; };
 		3CE2B3BC0E58DFAEF4E62ECF /* Pods_Men_Bodyzone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5687B377587803AA711D75B9 /* Pods_Men_Bodyzone.framework */; };
 		B2B69A6DDBD209E8D9940E7E /* Pods_Men_Bodyzone_Men_BodyzoneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C0D4F4A42459251B0523EB /* Pods_Men_Bodyzone_Men_BodyzoneUITests.framework */; };
+		BC07692324DCB0370024BE8F /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC07692224DCB0370024BE8F /* MapViewController.m */; };
+		BC07692524DCB9E10024BE8F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC07692424DCB9E10024BE8F /* MapKit.framework */; };
+		BC07692824DD20F80024BE8F /* MapPin.m in Sources */ = {isa = PBXBuildFile; fileRef = BC07692724DD20F80024BE8F /* MapPin.m */; };
 		BC64FD0724CACDFC0048AAE0 /* CamsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC64FD0624CACDFC0048AAE0 /* CamsViewController.m */; };
 		BCE3266524C1229F00574487 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE3266424C1229F00574487 /* AppDelegate.m */; };
 		BCE3266824C1229F00574487 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE3266724C1229F00574487 /* SceneDelegate.m */; };
@@ -60,6 +63,11 @@
 		9C7AA240CBDDB311C18F5E83 /* Pods-Men BodyzoneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Men BodyzoneTests.debug.xcconfig"; path = "Target Support Files/Pods-Men BodyzoneTests/Pods-Men BodyzoneTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A8BA39435911D8D744F99FAC /* Pods-Men Bodyzone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Men Bodyzone.release.xcconfig"; path = "Target Support Files/Pods-Men Bodyzone/Pods-Men Bodyzone.release.xcconfig"; sourceTree = "<group>"; };
 		B4A723F05068A68D2D3E68B2 /* Pods-Men Bodyzone-Men BodyzoneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Men Bodyzone-Men BodyzoneUITests.release.xcconfig"; path = "Target Support Files/Pods-Men Bodyzone-Men BodyzoneUITests/Pods-Men Bodyzone-Men BodyzoneUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BC07692124DCB0370024BE8F /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		BC07692224DCB0370024BE8F /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		BC07692424DCB9E10024BE8F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BC07692624DD20F80024BE8F /* MapPin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapPin.h; sourceTree = "<group>"; };
+		BC07692724DD20F80024BE8F /* MapPin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapPin.m; sourceTree = "<group>"; };
 		BC64FD0524CACDFC0048AAE0 /* CamsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CamsViewController.h; sourceTree = "<group>"; };
 		BC64FD0624CACDFC0048AAE0 /* CamsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CamsViewController.m; sourceTree = "<group>"; };
 		BCE3266024C1229F00574487 /* Men Bodyzone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Men Bodyzone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +115,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCE84E8A24D274400035334A /* WebKit.framework in Frameworks */,
+				BC07692524DCB9E10024BE8F /* MapKit.framework in Frameworks */,
 				3CE2B3BC0E58DFAEF4E62ECF /* Pods_Men_Bodyzone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,6 +155,7 @@
 		6104F3E938EF260FD9FEEECA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BC07692424DCB9E10024BE8F /* MapKit.framework */,
 				BCE84E8924D274400035334A /* WebKit.framework */,
 				5687B377587803AA711D75B9 /* Pods_Men_Bodyzone.framework */,
 				61C0D4F4A42459251B0523EB /* Pods_Men_Bodyzone_Men_BodyzoneUITests.framework */,
@@ -191,6 +201,8 @@
 				BCE3267524C122A000574487 /* main.m */,
 				BCE84E8324D12F9C0035334A /* WorkoutCell.h */,
 				BCE84E8424D12F9C0035334A /* WorkoutCell.m */,
+				BC07692624DD20F80024BE8F /* MapPin.h */,
+				BC07692724DD20F80024BE8F /* MapPin.m */,
 			);
 			path = "Men Bodyzone";
 			sourceTree = "<group>";
@@ -222,6 +234,8 @@
 				BCE3269F24C7419900574487 /* OptionViewController.m */,
 				BCE84E8F24D379630035334A /* LogViewController.h */,
 				BCE84E9024D379630035334A /* LogViewController.m */,
+				BC07692124DCB0370024BE8F /* MapViewController.h */,
+				BC07692224DCB0370024BE8F /* MapViewController.m */,
 				BCE84E9124D379630035334A /* LogViewController.xib */,
 				BCE84E8B24D276300035334A /* SomeViewController.h */,
 				BCE84E8C24D276300035334A /* SomeViewController.m */,
@@ -486,6 +500,7 @@
 				BC64FD0724CACDFC0048AAE0 /* CamsViewController.m in Sources */,
 				BCE3266B24C1229F00574487 /* ViewController.m in Sources */,
 				BCE3266524C1229F00574487 /* AppDelegate.m in Sources */,
+				BC07692824DD20F80024BE8F /* MapPin.m in Sources */,
 				BCE84E8D24D276300035334A /* SomeViewController.m in Sources */,
 				BCE3267624C122A000574487 /* main.m in Sources */,
 				BCE3269D24C7418600574487 /* UserDataViewController.m in Sources */,
@@ -493,6 +508,7 @@
 				BCE84E9224D379630035334A /* LogViewController.m in Sources */,
 				BCE84E8224D12E900035334A /* WorkoutViewController.m in Sources */,
 				BCE84E9724D389260035334A /* AccountViewController.m in Sources */,
+				BC07692324DCB0370024BE8F /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,8 @@
 #import "Parse/Parse.h"
 #import "LogViewController.h"
 #import "AccountViewController.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+//#import <ParseFacebookUtilsV4/PFFacebookUtils.h>
 
 
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
@@ -21,8 +23,13 @@
 @implementation AppDelegate
 
 
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(  NSDictionary *)launchOptions {
     
+//    - (void) application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+//      [Parse setApplicationId:@"parseAppId" clientKey:@"parseClientKey"];
+//      [PFFacebookUtils initializeFacebookWithApplicationLaunchOptions:launchOptions];
+//    }
     ParseClientConfiguration *config = [ParseClientConfiguration   configurationWithBlock:^(id<ParseMutableClientConfiguration> configuration) {
         
         configuration.applicationId = @"myid";

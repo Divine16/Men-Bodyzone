@@ -374,10 +374,10 @@
             </objects>
             <point key="canvasLocation" x="-13488.40579710145" y="-638.16964285714278"/>
         </scene>
-        <!--Login View Controller-->
+        <!--Log View Controller-->
         <scene sceneID="Mma-sc-s0J">
             <objects>
-                <viewController id="Eo8-cr-VfV" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController id="Eo8-cr-VfV" customClass="LogViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qCe-Za-lO0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -399,7 +399,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K3q-SQ-jeR">
-                                <rect key="frame" x="20" y="190" width="374" height="497"/>
+                                <rect key="frame" x="20" y="88" width="374" height="710"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
@@ -407,6 +407,15 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dn1-4J-ZtK">
+                                <rect key="frame" x="64" y="819" width="286" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="FEELING MOTIVATED ?"/>
+                                <connections>
+                                    <segue destination="JQu-kQ-A05" kind="presentation" modalPresentationStyle="fullScreen" id="QKx-WP-uIB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="fJI-7K-CQF"/>
@@ -419,6 +428,82 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FMg-RV-5MN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-11917.391304347828" y="-638.16964285714278"/>
+        </scene>
+        <!--Map View-->
+        <scene sceneID="Anb-3A-q24">
+            <objects>
+                <viewController id="T9N-M4-lB6" customClass="MapViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Iud-7v-LGF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ShW-fG-IVz">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pu-wW-MtV">
+                                <rect key="frame" x="20" y="831" width="88" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Standard"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GI1-G3-305">
+                                <rect key="frame" x="20" y="830" width="88" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Standard"/>
+                                <connections>
+                                    <action selector="satelite:" destination="T9N-M4-lB6" eventType="touchUpInside" id="t4D-qI-YIf"/>
+                                    <action selector="standard:" destination="T9N-M4-lB6" eventType="touchUpInside" id="Vu3-em-tl7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFI-OS-FnG">
+                                <rect key="frame" x="133" y="832" width="84" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Satelite"/>
+                                <connections>
+                                    <action selector="satelite:" destination="T9N-M4-lB6" eventType="touchUpInside" id="JuG-Da-iMD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lb8-Ew-Gr5">
+                                <rect key="frame" x="225" y="830" width="71" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Hybrid"/>
+                                <connections>
+                                    <action selector="hybrid:" destination="T9N-M4-lB6" eventType="touchUpInside" id="cti-ln-YTb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G74-Db-unb">
+                                <rect key="frame" x="304" y="834" width="90" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Locate"/>
+                                <connections>
+                                    <action selector="locate:" destination="T9N-M4-lB6" eventType="touchUpInside" id="eaQ-tq-Lud"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="LhJ-7r-NJ6"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Map View" id="FcH-iQ-VtV">
+                        <barButtonItem key="rightBarButtonItem" title="Directions" id="nxg-zG-NeV">
+                            <connections>
+                                <action selector="directions:" destination="T9N-M4-lB6" id="L0Q-Jy-MYs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mapView" destination="ShW-fG-IVz" id="GGZ-j1-nJD"/>
+                        <outlet property="satelite" destination="dFI-OS-FnG" id="nLB-lN-Jdj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pgD-U1-EF7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9982.608695652174" y="-794.19642857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gKA-nf-f0O">
@@ -437,6 +522,29 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oTF-Le-Owh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-14400.000000000002" y="-660.26785714285711"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UIf-pe-hUe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JQu-kQ-A05" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3bX-e7-hl0">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="AvenirNext-HeavyItalic" family="Avenir Next" pointSize="30"/>
+                            <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="T9N-M4-lB6" kind="relationship" relationship="rootViewController" id="X0L-sq-c1c"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sY0-HY-SVH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10892.753623188406" y="-794.19642857142856"/>
         </scene>
     </scenes>
     <resources>

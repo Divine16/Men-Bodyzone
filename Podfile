@@ -7,8 +7,9 @@ target 'Men Bodyzone' do
 
   # Pods for Men Bodyzone
 
-pod 'FBSDKLoginKit'
+
 pod 'Parse'
+pod 'Parse/FacebookUtils'
 
   target 'Men BodyzoneTests' do
     inherit! :search_paths
